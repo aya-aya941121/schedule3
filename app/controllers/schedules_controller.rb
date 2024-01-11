@@ -5,6 +5,7 @@ class SchedulesController < ApplicationController
    
     def show
         @schedule = Schedule.find(params[:id])
+        @show_delete_modal=params[:show_delete_modal]
     end
 
     def new
